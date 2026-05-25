@@ -1,0 +1,36 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE/OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Application data
+instance/
+*.db
+
+# Sin Test
+*.log
+tests/
+documento_tecnico.md

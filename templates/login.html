@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-5">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h2 class="card-title mb-4">Inicio de sesión</h2>
+                <form method="post" novalidate>
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" value="{{ form.get('email', '') }}" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Contraseña</label>
+                        <input type="password" name="password" class="form-control" required>
+                        <div class="form-text">
+                            8-64 caracteres, mayúscula, minúscula, número y símbolo permitido (!@#$%^&*). Ejemplo: Pass123!
+                        </div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input class="form-check-input" type="checkbox" id="toggle-password">
+                        <label class="form-check-label" for="toggle-password">Mostrar contraseña</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+                </form>
+                <div class="mt-3 text-center">
+                    <a href="{{ url_for('register') }}">Crear cuenta</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const togglePassword = document.getElementById("toggle-password");
+    const passwordField = document.querySelector("input[name='password']");
+
+    togglePassword.addEventListener("change", () => {
+        passwordField.type = togglePassword.checked ? "text" : "password";
+    });
+</script>
+{% endblock %}
