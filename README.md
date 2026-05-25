@@ -12,7 +12,6 @@ MediResist es un sistema web minimalista y robusto para reservar citas médicas.
 
 ## Instalación y ejecución
 ```bash
-cd plataforma_citas_medicas
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
@@ -30,9 +29,6 @@ La aplicación quedará disponible en `http://127.0.0.1:5000`.
 ## Usuario tester
 - Email: tester@medireserve.com
 - Contraseña: Test123!
-
-## Documentación técnica
-Consulte `documento_tecnico.md` para la especificación de pruebas PE/AVL y decisiones de implementación.
 
 ## Manual rápido
 Consulte `manual_rapido.md` para un flujo de prueba breve para testers.
