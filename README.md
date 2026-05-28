@@ -32,3 +32,5 @@ La aplicación quedará disponible en `http://127.0.0.1:5000`.
 
 ## Manual rápido
 Consulte `manual_rapido.md` para un flujo de prueba breve para testers.
+
+[Repositorio con tests](https://github.com/hz07s/LAB_10_PlataformaDeReservasDeCitasMedicas-ConTest)
